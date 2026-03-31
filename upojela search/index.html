@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>বাংলাদেশ উপজেলা ফাইন্ডার</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>উপজেলা ডিরেক্টরি</h1>
+        <p>৪৯৬টি উপজেলার তথ্য (ক্লিক করে জেলা দেখুন)</p>
+      </header>
+
+      <div class="search-area">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="উপজেলার নাম বাংলায় টাইপ করুন..."
+          autocomplete="off"
+        />
+      </div>
+
+      <div id="numOfUpozela" class="numOfUpozela"></div>
+      <div class="upazilaGrid" id="upazilaGrid"></div>
+    </div>
+
+    <div class="popup-bg" id="popupBg">
+      <div class="popup">
+        <h2 id="mUpazila"></h2>
+        <p id="mDistrict"></p>
+        <button class="btn-close" onclick="closePop()">বন্ধ করুন</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
